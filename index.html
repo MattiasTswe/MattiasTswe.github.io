@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Coffee Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Mattias Toth">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/main.css">
+    <script src="Javascript/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <!--
+    Top navigation bar, contains logo aligned top left, and 3 page jump links
+    with text aligned to the right.
+    -->
+    <div class="topSection">
+      <nav class="navigationBar">
+        <img id="companyLogo" src="Images/WebsiteLogo.png" alt="Website Logo">
+
+        <div class="topRightMenu">
+          <a href="#menu">Menu</a><span style="font-size: 25px;"> | </span>
+          <a href="#about">About</a><span style="font-size: 25px;"> | </span>
+          <a href="#contact">Contact Us</a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="carouselSection">
+      <!--Top section contains carousel implemented with bootstrap-->
+      <div class="container">
+        <div id="carouselTest" class="carousel slide">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li class="item1 active"></li>
+            <li class="item2"></li>
+            <li class="item3"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="Images/test1.jpg" alt="Coffee1" style="width:100%;">
+              <div class="carousel-caption">
+                <h3>People</h3>
+                <p>Whether you're here alone or with friends, we guarantee a friendly atmosphere</p>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="Images/test2.jpg" alt="Coffee2" style="width:100%;">
+              <div class="carousel-caption">
+                <h3>Space</h3>
+                <p>A relaxing area to enjoy a hot beverage, and good company</p>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="Images/test3.jpg" alt="Coffee3" style="width:100%;">
+              <div class="carousel-caption">
+                <h3>Coffees</h3>
+                <p>With our regular selection, special offers and new coffees, we have something for everyone</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#carouselTest" role="button">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+
+          <a class="right carousel-control" href="#carouselTest" role="button">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="menu" class="menuSection">
+      <!--
+      This section has a header with text, contains 3 links with pictures and one button (functionality to be implemented).
+      All of the links are centred. The three picture elements have 3 text descriptions
+      below them. The button has a text description on it.
+      -->
+      <h2>Menu</h2>
+
+      <div class="specialMenus">
+        <div class="alignImageText">
+          <a href="#">
+            <img class="menuImage" src="Images/menu1.jpg" alt="Popular Coffees">
+          </a>
+          <span class="menuText">Popular Coffees</span>
+        </div>
+
+        <div class="alignImageText">
+          <a href="#">
+            <img class="menuImage" src="Images/menu2.jpg" alt="New Coffees">
+          </a>
+          <span class="menuText">New Coffees</span>
+        </div>
+
+        <div class="alignImageText">
+          <a href="#">
+            <img class="menuImage" src="Images/menu3.jpg" alt="Special Offers">
+          </a>
+          <span class="menuText">Special Offers</span>
+        </div>
+      </div>
+
+      <button id="menuButton">Full Menu</button>
+    </div>
+
+    <div id="about" class="infoSection">
+      <!--
+      This section has a header with text, a left aligned text area with a title/body
+      There is a picture element aligned to the right
+      -->
+      <h2>About Us</h2>
+
+      <div class="infoTextImage">
+        <div class="teamTextArea">
+          <h3>Our Team</h3>
+          <span id="teamInfo">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla efficitur lacus nec lectus fringilla scelerisque. Praesent sit amet sem ipsum. Praesent sed sapien fermentum, iaculis mauris id, semper justo. Mauris bibendum lorem ac nulla tincidunt, ut iaculis magna rhoncus. Duis mauris diam, scelerisque non quam non, vulputate pulvinar turpis. Cras hendrerit lorem at massa dapibus, eu euismod orci iaculis. Praesent interdum ultrices lacus, ac ultrices ipsum iaculis ut. Integer neque sapien, tristique in molestie in, vehicula quis urna. Pellentesque nec risus facilisis ante posuere vestibulum. Donec auctor accumsan massa sed elementum. Integer eget fringilla est. Suspendisse pulvinar eu lorem eu elementum. Vivamus ante neque, vulputate eu feugiat id, vehicula eget metus.
+          </span>
+        </div>
+
+        <img id="aboutImage" src="Images/team1.jpg" alt="Team Photo">
+      </div>
+    </div>
+
+    <div id="contact" class="contactSection">
+      <!--This section contains a header with text, a Google Maps plugin aligned to the left
+      Three descriptions are aligned to the right, top to bottom with links to the right of Theme
+      -->
+      <h2>Contact Us</h2>
+
+      <div class="mapAndContact">
+        <div id="coffeeMap"></div>
+        <div class="contactText">
+          <p>Address: 123 Fake Street, Faketown, FK1 2TW</p>
+          <p>Opening hours: Mon-Fri 8AM-6PM, Sat-Sun 8AM-3PM</p>
+          <p>E-mail: <a href="mailto:testfakeemail54321@example.com">testfakeemail54321@example.com</a></p>
+          <p>Phone: 555-0143</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="formSection">
+      <!--This section contains a header with text, two text fields and one text area
+      These are aligned to the centre, top to bottom. There is a check box with description
+      aligned at the bottom of the text fields. There is a send button at the bottom of the text
+      area.
+      HTML forms. Placeholder until I add functionality
+      -->
+      <h2>Feedback</h2>
+
+      <div class="formStyling">
+        <form method="post" action="http://localhost/phptest.php">
+          Name<br>
+          <input type="text" name="name"><br>
+          E-mail<br>
+          <input type="text" name="email"><br>
+          Comments<br>
+          <textarea id="commentArea" placeholder="Please enter your feedback." name="comments" cols="30" rows="5"></textarea><br>
+          <input type="checkbox" name="newsletter" value="Yes"> I would like to receive news and offers<br>
+          <br>
+          <button>Send</button>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footerSection">
+        <!--Footer contains text area aligned to the left (copyright info)
+        Hyperlinks leading to various social media websites are aligned to the right
+        -->
+        <span id="copyrightText">© 2017 The Coffee Place. All rights reserved.</span>
+
+        <div class="socialMedia">
+          <a href="https://www.facebook.com/">
+            <img id="facebookIcon" src="Images/Facebook.png" alt="Facebook">
+          </a>
+          <a href="https://twitter.com">
+            <img id="twitterIcon" src="Images/Twitter.png" alt="Twitter">
+          </a>
+          <a href="https://www.snapchat.com/l/en-gb/">
+            <img id="snapchatIcon" src="Images/Snapchat.png" alt="Snapchat">
+          </a>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Using jQuery to iniitialise the carousel at the top of the page -->
+    <script>
+      $(document).ready(function(){
+        $("#carouselTest").carousel({interval: 6000});
+
+        $(".item1").click(function(){
+          $("#carouselTest").carousel(0);
+        });
+        $(".item2").click(function(){
+          $("#carouselTest").carousel(1);
+        });
+        $(".item3").click(function(){
+          $("#carouselTest").carousel(2);
+        });
+
+        $(".left").click(function(){
+          $("#carouselTest").carousel("prev");
+        });
+        $(".right").click(function(){
+          $("#carouselTest").carousel("next");
+        });
+      });
+    </script>
+
+    <!-- Google Maps API callback initiated last to ensure other scripts of the website load first -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBy0793FUlQBlN3upeEvXz_OZA7GVVVmh4&callback=myMap"></script>
+  </body>
+</html>

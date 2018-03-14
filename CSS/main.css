@@ -1,0 +1,345 @@
+@font-face {
+  font-family: 'CenturyGothic';
+  src:  url('../Fonts/CenturyGothicRegular.woff2') format('woff2'),
+        url('../Fonts/CenturyGothicRegular.woff') format('woff'),
+        url('../Fonts/CenturyGothicRegular.ttf') format('truetype');
+}
+
+h2 {
+	font-family: CenturyGothic,sans-serif;
+  font-size: 30px;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  margin: auto;
+}
+
+h3 {
+	font-family: CenturyGothic,Arial,sans-serif;
+  font-size: 20px;
+  width: 100%;
+  padding: 20px;
+  margin: auto;
+}
+
+p {
+	font-family: CenturyGothic,Arial,sans-serif;
+  font-size: 15px;
+}
+
+.topSection {
+  background-color: #D34B47;
+  width: 100%;
+  height: 100%;
+}
+
+.navigationBar {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+#companyLogo {
+  display: inline-block;
+  max-height: 40px;
+  padding-right: 50px;
+}
+
+.topRightMenu {
+  display: inline-block;
+	font-family: CenturyGothic,Arial,sans-serif;
+  font-size: 20px;
+  padding-left: 50px;
+}
+
+.topRightMenu a {
+  color: white;
+}
+
+@media only screen and (max-width: 366px) {
+  #companyLogo{padding-right: 0px;}
+  .topRightMenu{padding-left: 0px;}
+}
+
+@media only screen and (min-width: 367px) (max-width: 767px) {
+  #companyLogo{padding-right: 50px;}
+  .topRightMenu{padding-left: 50px;}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 926px) {
+  #companyLogo{padding-right: 100px;}
+  .topRightMenu{padding-left: 100px;}
+}
+
+@media only screen and (min-width: 927px) {
+  #companyLogo{padding-right: 200px;}
+  .topRightMenu{padding-left: 200px;}
+}
+
+.carouselSection {
+    background-color: #c5c8cc;
+    width: 100%;
+}
+
+.menuSection {
+  background-color: #c5c8cc;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.specialMenus {
+  padding: 10px;
+}
+
+.alignImageText {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.menuImage {
+  margin-left: 20px;
+  margin-right: 20px;
+  max-height: 250px;
+}
+
+@media only screen and (max-width: 366px) {
+  .menuImage{margin-left: 0px; margin-right: 0px; max-width: 250px;}
+  .specialMenus{padding: 0;}
+}
+
+@media only screen and (min-width: 367px) and (max-width: 767px) {
+  .menuImage{margin-left: 10px; margin-right: 10px;}
+}
+
+.menuText {
+	font-family: CenturyGothic,Arial,sans-serif;
+  font-size: 20px;
+  padding: 15px;
+  display: block;
+}
+
+#menuButton {
+	font-family: CenturyGothic,Arial,sans-serif;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.infoSection {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+}
+
+.infoTextImage {
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.teamTextArea {
+    position: relative;
+    display:inline-block;
+    min-width: 400px;
+    max-width: 500px;
+}
+
+#teamInfo {
+    position: relative;
+    display:inline-block;
+	  font-family: CenturyGothic,Arial,sans-serif;
+    text-align: justify;
+    padding-right: 20px;
+    overflow:auto;
+}
+
+#aboutImage {
+  position: relative;
+  display:inline-block;
+  max-width: 500px;
+  padding-bottom: 30px;
+  padding-top: 20px;
+  padding-left: 20px;
+  vertical-align: top;
+}
+
+@media only screen and (max-width: 366px){
+  #teamInfo{padding-right: 10px; padding-left: 10px;}
+  #aboutImage{padding-left: 0px; max-width: 300px;}
+  .teamTextArea{min-width: 200px;}
+  .teamTextArea h3{padding-top: 10px};
+}
+
+@media only screen and (min-width: 367px) and (max-width: 1019px) {
+  #teamInfo{padding-right: 0px;}
+  #aboutImage{padding-left: 0px; max-width: 400px}
+  .teamTextArea{min-width: 200px;}
+}
+
+.contactSection {
+    background-color: #c5c8cc;
+    height: 100%;
+    width: 100%;
+}
+
+.mapAndContact {
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+#coffeeMap {
+    position: relative;
+    display:inline-block;
+    width: 300px;
+    height: 300px;
+    margin: 0 20px 40px 10px;
+    background-color: grey;
+}
+
+.contactText {
+  position: relative;
+  display:inline-block;
+	font-family: CenturyGothic,Arial,sans-serif;
+  text-align: justify;
+  padding-left: 20px;
+  vertical-align: top;
+}
+
+.contactText p {
+  padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 366px) {
+  #coffeeMap{margin: 0 0 10px 0;}
+  .contactText{padding-left: 0px; text-align: center;}
+}
+
+@media only screen and (min-width: 367px) and (max-width: 767px) {
+  #coffeeMap{margin: 0 0 10px 0;}
+  .contactText{padding-left: 10px;}
+}
+
+.formSection {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+}
+
+.formStyling {
+  position: relative;
+  width: 100%;
+  text-align: center;
+	font-family: CenturyGothic,Arial,sans-serif;
+  padding-bottom: 20px;
+}
+
+#commentArea {
+    resize: none;
+}
+
+.footerSection {
+    background-color: #D34B47;
+    width: 100%;
+    text-align: center;
+}
+
+#copyrightText {
+  display: inline-block;
+	font-family: CenturyGothic,Arial,sans-serif;
+  padding-right: 150px;
+}
+
+.socialMedia {
+  display: inline-block;
+  padding-left: 150px;
+}
+
+#facebookIcon {
+  width: 50px;
+  height: 50px;
+  margin: 12.5px;
+}
+
+#twitterIcon {
+  width: 50px;
+  height: 50px;
+  margin: 12.5px;
+}
+
+#snapchatIcon {
+  width: 50px;
+  height: 50px;
+  margin: 12.5px;
+}
+
+@media only screen and (max-width:366px) {
+  #copyrightText{padding-right: 0px; padding-top: 10px;}
+  .socialMedia{padding-left: 0px;}
+}
+
+@media only screen and (min-width: 367) (max-width: 767px) {
+  #copyrightText{padding-right: 50px;}
+  .socialMedia{padding-left: 50px;}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 850px) {
+  #copyrightText{padding-right: 100px;}
+  .socialMedia{padding-left: 100px;}
+}
+
+@media only screen and (min-width: 851px) {
+  #companyLogo{padding-right: 200px;}
+  .topRightMenu{padding-left: 200px;}
+}
+
+.container
+{
+    padding-right: 0;
+    padding-left: 0;
+    border-top: 10%;
+    width: 100%;
+    z-index: 7;
+}
+
+.carousel-inner {
+    width: 100%;
+    max-height: 800px !important;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 52.5%;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 1)
+}
+
+.carousel-caption h3 {
+  position: relative;
+  width: 100%;
+  background-color: rgba(30,30,30,0.5);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 35px;
+}
+
+.carousel-caption p {
+  position: relative;
+  width: 100%;
+  background-color: rgba(30,30,30,0.5);
+  font-size: 20px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 366px) {
+  .carousel-caption h3{font-size: 20px; padding: 0;}
+  .carousel-caption p {font-size: 10px;}
+  .carousel-indicators {bottom: -10px;}
+}
+
+.carousel-control.left {
+    z-index: 7;
+}
+
+.error {
+  color: #FF0000;
+}
